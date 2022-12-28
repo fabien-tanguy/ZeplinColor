@@ -1,0 +1,82 @@
+[
+  {
+    "id": "5dbad85a76ea51c1f35b6f69",
+    "source_id": "0BEBFEB3-A107-4D1D-A3B0-77D1FBD35F01",
+    "created": 1517184000,
+    "name": "primary-900",
+    "r": 0,
+    "g": 19,
+    "b": 103,
+    "a": 1,
+    "source": {
+      "project": {
+        "id": "5db81e73e1e36ee19f138c1a",
+        "name": "EuroMillions",
+        "platform": "web",
+        "linked_styleguide": {
+          "id": "5db981be9df2b3e1bfa19ef2"
+        }
+      }
+    }
+  },
+  {
+    "id": "5dbad85a76ea51c1f35b6f69",
+    "source_id": "0BEBFEB3-A107-4D1D-A3B0-77D1FBD35F01",
+    "created": 1517184000,
+    "name": "primary-600",
+    "r": 0,
+    "g": 43,
+    "b": 160,
+    "a": 1,
+    "source": {
+      "project": {
+        "id": "5db81e73e1e36ee19f138c1a",
+        "name": "EuroMillions",
+        "platform": "web",
+        "linked_styleguide": {
+          "id": "5db981be9df2b3e1bfa19ef2"
+        }
+      }
+    }
+  },
+  {
+    "id": "5dbad85a76ea51c1f35b6f69",
+    "source_id": "0BEBFEB3-A107-4D1D-A3B0-77D1FBD35F01",
+    "created": 1517184000,
+    "name": "secondary-900",
+    "r": 238,
+    "g": 187,
+    "b": 5,
+    "a": 1,
+    "source": {
+      "project": {
+        "id": "5db81e73e1e36ee19f138c1a",
+        "name": "EuroMillions",
+        "platform": "web",
+        "linked_styleguide": {
+          "id": "5db981be9df2b3e1bfa19ef2"
+        }
+      }
+    }
+  },
+  {
+    "id": "5dbad85a76ea51c1f35b6f69",
+    "source_id": "0BEBFEB3-A107-4D1D-A3B0-77D1FBD35F01",
+    "created": 1517184000,
+    "name": "secondary-600",
+    "r": 255,
+    "g": 226,
+    "b": 103,
+    "a": 1,
+    "source": {
+      "project": {
+        "id": "5db81e73e1e36ee19f138c1a",
+        "name": "EuroMillions",
+        "platform": "web",
+        "linked_styleguide": {
+          "id": "5db981be9df2b3e1bfa19ef2"
+        }
+      }
+    }
+  }
+]
