@@ -1,42 +1,25 @@
-[
-  {
-    "id": "5dbad85a76ea51c1f35b6f69",
-    "source_id": "0BEBFEB3-A107-4D1D-A3B0-77D1FBD35F01",
-    "created": 1517184000,
-    "name": "primary-900",
-    "r": 0,
-    "g": 162,
-    "b": 217,
-    "a": 1,
-    "source": {
-      "project": {
-        "id": "5db81e73e1e36ee19f138c1a",
-        "name": "Loto",
-        "platform": "web",
-        "linked_styleguide": {
-          "id": "5db981be9df2b3e1bfa19ef2"
-        }
-      }
+{
+  "name": "Loto",
+  "colors": [
+    {
+      "name": "primary-900",
+      "code": "#00a2d9"
+    },
+    {
+      "name": "primary-600",
+      "code": "#00cfee"
+    },
+    {
+      "name": "secondary-900",
+      "code": "#ea3946"
+    },
+    {
+      "name": "secondary-600",
+      "code": "#f66b7c"
+    },
+    {
+      "name": "tertiary-900",
+      "code": "#293985"
     }
-  },
-  {
-    "id": "5dbad85a76ea51c1f35b6f69",
-    "source_id": "0BEBFEB3-A107-4D1D-A3B0-77D1FBD35F01",
-    "created": 1517184000,
-    "name": "primary-600",
-    "r": 0,
-    "g": 207,
-    "b": 238,
-    "a": 1,
-    "source": {
-      "project": {
-        "id": "5db81e73e1e36ee19f138c1a",
-        "name": "Loto",
-        "platform": "web",
-        "linked_styleguide": {
-          "id": "5db981be9df2b3e1bfa19ef2"
-        }
-      }
-    }
-  }
-]
+  ]
+}

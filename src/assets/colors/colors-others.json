@@ -1,29 +1,29 @@
 {
-  "name": "Couleurs principales FDJ",
+  "name": "Divers",
   "colors": [
     {
       "name": "primary-900",
-      "code": "#282387"
+      "code": "#1a1a1a"
+    },
+    {
+      "name": "primary-700",
+      "code": "#4a4a4a"
     },
     {
       "name": "primary-600",
-      "code": "#363cb3"
+      "code": "#9b9b9b"
     },
     {
       "name": "primary-500",
-      "code": "#1b4bb3"
+      "code": "#c8c8c8"
     },
     {
       "name": "primary-300",
-      "code": "#ccd6eb"
+      "code": "#dedede"
     },
     {
       "name": "primary-150",
-      "code": "#e3f0ff"
-    },
-    {
-      "name": "secondary-900",
-      "code": "#f00a0a"
+      "code": "#ebebeb"
     }
   ]
 }

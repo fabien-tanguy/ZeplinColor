@@ -1,20 +1,17 @@
 import * as React from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import { Flex, TabWrapper } from "./Tab.style";
+import { ColorSquare } from "../ColorSquare/ColorSquare";
+import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
+
+// COLORS
 import fdjColors from "../../assets/colors/colors-fdj.json";
+import alertsColors from "../../assets/colors/colors-alerts.json";
+import othersColors from "../../assets/colors/colors-others.json";
 import eumlColors from "../../assets/colors/colors-euml.json";
 import lotoColors from "../../assets/colors/colors-loto.json";
 import illikoColors from "../../assets/colors/colors-illiko.json";
-import { Flex, TabWrapper } from "./Tab.style";
-import { ColorSquare } from "../ColorSquare/ColorSquare";
-import { transformZeplinAPI } from "../../utils/transformer";
-import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
-
-interface TabPanelProps {
-  children?: React.ReactNode;
-  index: number;
-  value: number;
-}
 
 function a11yProps(index: number) {
   return {
@@ -26,7 +23,7 @@ function a11yProps(index: number) {
 export default function BasicTabs() {
   const [selectedIndex, setSelectedIndex] = React.useState(0);
   return (
-    <Box>
+    <Box maxWidth="400px" border="1px solid #dedede" borderRadius="10px">
       <Tabs>
         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
           <TabList>
@@ -42,6 +39,7 @@ export default function BasicTabs() {
                   <TabWrapper isSelected={index === selectedIndex}>
                     <Typography
                       fontWeight={index === selectedIndex ? "600" : "normal"}
+                      fontSize="small"
                     >
                       {game}
                     </Typography>
@@ -51,34 +49,35 @@ export default function BasicTabs() {
             </Flex>
           </TabList>
         </Box>
-        {[[fdjColors], [eumlColors, lotoColors], [illikoColors]].map(
-          (project, index) => {
-            return (
-              <TabPanel key={index}>
-                {project.map((project, index) => {
-                  const colors = React.useRef(transformZeplinAPI(project));
-                  return (
-                    <React.Fragment key={index}>
-                      <Typography>{project[0].source.project.name}</Typography>
-                      <Flex>
-                        {colors.current.map((color) => (
-                          <ColorSquare
-                            r={color.r}
-                            g={color.g}
-                            b={color.b}
-                            a={color.a}
-                            name={color.name}
-                            key={color.name}
-                          />
-                        ))}
-                      </Flex>
-                    </React.Fragment>
-                  );
-                })}
-              </TabPanel>
-            );
-          }
-        )}
+        {[
+          [fdjColors, othersColors, alertsColors],
+          [eumlColors, lotoColors],
+          [illikoColors],
+        ].map((project, index) => {
+          return (
+            <TabPanel key={index}>
+              {project.map((project, index) => {
+                const colors = React.useRef(project);
+                return (
+                  <Box m={2} key={index}>
+                    <Typography mb={1} fontSize="small">
+                      {project.name}
+                    </Typography>
+                    <Flex>
+                      {colors.current.colors.map((color) => (
+                        <ColorSquare
+                          name={color.name}
+                          code={color.code}
+                          key={color.name}
+                        />
+                      ))}
+                    </Flex>
+                  </Box>
+                );
+              })}
+            </TabPanel>
+          );
+        })}
       </Tabs>
     </Box>
   );

@@ -1,0 +1,21 @@
+{
+  "name": "Alertes",
+  "colors": [
+    {
+      "name": "alert-success-primary",
+      "code": "#5ec34d"
+    },
+    {
+      "name": "alert-warning-primary",
+      "code": "#f5a623"
+    },
+    {
+      "name": "alert-error-primary",
+      "code": "#e52645"
+    },
+    {
+      "name": "alert-info-primary",
+      "code": "#116bd3"
+    }
+  ]
+}

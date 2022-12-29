@@ -5,22 +5,19 @@ import { ColorSquareWrapper } from "./ColorSquare.style";
 
 export interface ColorSquareProps {
   name: string;
-  r: number;
-  g: number;
-  b: number;
-  a: number;
+  code: string;
 }
 
-export const ColorSquare = ({ r, g, b, a, name }: ColorSquareProps) => {
+export const ColorSquare = ({ name, code }: ColorSquareProps) => {
   const [_num, setNum] = useAtom(testAtom);
 
   return (
     <ColorSquareWrapper
       style={{
-        backgroundColor: `rgba(${r},${g},${b},${a})`,
+        backgroundColor: `${code}`,
       }}
       title={name}
-      onClick={() => setNum(RGBToHex(r, g, b))}
+      onClick={() => setNum(code)}
     />
   );
 };
