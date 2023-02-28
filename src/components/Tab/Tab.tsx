@@ -23,7 +23,7 @@ function a11yProps(index: number) {
 export default function BasicTabs() {
   const [selectedIndex, setSelectedIndex] = React.useState(0);
   return (
-    <Box maxWidth="400px" border="1px solid #dedede" borderRadius="10px">
+    <Box border="1px solid #dedede" borderRadius="10px">
       <Tabs>
         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
           <TabList>
@@ -50,8 +50,11 @@ export default function BasicTabs() {
           </TabList>
         </Box>
         {[
+          // TAB 1
           [fdjColors, othersColors, alertsColors],
+          // TAB 2
           [eumlColors, lotoColors],
+          // TAB 3
           [illikoColors],
         ].map((project, index) => {
           return (
