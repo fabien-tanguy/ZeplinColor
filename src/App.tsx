@@ -7,11 +7,10 @@ import Tab from "./components/Tab/Tab";
 export const testAtom = atom("");
 
 function App() {
-  const [num] = useAtom(testAtom);
+  const [num, setNum] = useAtom(testAtom);
 
   const [showColorPicker, setShowColorPicker] = useState(false);
   const ref = useClickOutside(() => {
-    console.log("outside");
     setShowColorPicker(false);
   });
 
@@ -22,6 +21,7 @@ function App() {
         size="small"
         value={num}
         onClick={() => setShowColorPicker(true)}
+        onChange={(e) => setNum(e.target.value)}
       />
       {showColorPicker && (
         <Box ref={ref} maxWidth="500px" marginTop={4}>
